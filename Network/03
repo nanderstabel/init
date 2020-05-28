@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: Identify the MAC address of the Wi-Fi card\e[0m'
+printf "\tifconfig en1 | grep ether | awk '{print \$2}'\n"

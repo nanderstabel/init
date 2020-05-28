@@ -1,0 +1,4 @@
+echo $'\e[4mDeduction: Use the output of the previous command to find the name and IP address of the
+device that makes the link between you (local network) and the outside world\e[0m'
+echo "The name of the device that makes the link between me (local network) and the outside world is the gateway router. 
+The IP address of my gateway router is: " & netstat -nr | awk '/default/{print $2}' | sed '$d' 

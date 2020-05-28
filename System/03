@@ -1,0 +1,2 @@
+echo $'\e[4mDeduction: What file has to be modified to make it permanent?\e[0m'
+echo /etc/hostname

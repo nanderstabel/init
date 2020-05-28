@@ -1,0 +1,3 @@
+echo $'\e[4mDeduction: Get the complete path of the file that contains the IP address of the DNS server
+you’re using\e[0m'
+printf "\t/var/run/resolv.conf\n"

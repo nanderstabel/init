@@ -1,0 +1,9 @@
+#!/bin/bash
+# Script to check ft_ls long output against ls long output
+ARGS=$*
+mkdir tmp_unlikely_dir
+touch tmp_unlikely_dir/file1 tmp_unlikely_dir/file2
+ls -l $ARGS > tmp_unlikely_dir/file1
+./ft_ls -l $ARGS > tmp_unlikely_dir/file2
+diff tmp_unlikely_dir/file1 tmp_unlikely_dir/file2 | grep '<\|>'
+rm -rf tmp_unlikely_dir

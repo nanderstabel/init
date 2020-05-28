@@ -1,0 +1,2 @@
+echo $'\e[4mDeduction: What file contains the local DNS entries?\e[0m'
+echo /etc/hosts

@@ -1,0 +1,5 @@
+echo $'\e[4mCommand: Identify and display the Ethernet interface characteristics:\e[0m'
+echo $' \e[4m(a) Identify broadcast address\e[0m'
+printf "\tifconfig en0 | awk '/inet /{print \$6}'\n"
+echo $' \e[4m(b) Identify all IP adresses which are part of the same subnet\e[0m'
+printf "\tping -c 2 \$(ifconfig en0 | awk '/inet /{print \$6}') | tail -r | awk '{if(NR>5)print \$4}' | sed '\$d; s/://'\n"

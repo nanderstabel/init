@@ -1,0 +1,2 @@
+echo $'\e[4mDeduction: Find the provider of slash16.org\e[0m'
+printf "\twhois slash16.org | grep 'Name Server' | awk '{print \$3}'\n"

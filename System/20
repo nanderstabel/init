@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: List all existing users on the VM\e[0m'
+printf "\tcat /etc/passwd | awk -F':' '{printf \$1 \"\\\n\"}'\n"

@@ -1,0 +1,2 @@
+echo $'\e[4mDeduction: In what file can you find the installed version of your Debian?\e[0m'
+echo /etc/debian_version

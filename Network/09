@@ -1,0 +1,2 @@
+echo $'\e[4mOutput: Find the external IP of 42.fr\e[0m'
+echo 163.172.250.12

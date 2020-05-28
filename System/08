@@ -1,0 +1,2 @@
+echo $'\e[4mDeduction: What file contains the RSA keys of systems that are authorized to connect via SSH?\e[0m'
+echo '~'/.ssh/authorized_keys

@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: Find the command that list all packages\e[0m'
+printf "\tapt list --installed | awk -F'/stable' '{printf \$1 \"\\\n\"}'\n"

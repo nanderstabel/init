@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: Identify the IP address of the DNS that responds to the following url: slash16.org\e[0m'
+printf "\tnslookup slash16.org | grep Server | awk '{print \$2}'\n"

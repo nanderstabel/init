@@ -1,0 +1,2 @@
+echo $'\e[4mDeduction: Explain how connect yourself as new user. (With graphic session and ssh session)\e[0m'
+printf "\tGraphic: start the virtual machine, enter login and password\n\tSSH: first: <login>@<ip address>, then: enter password\n"

@@ -1,0 +1,3 @@
+echo $'\e[4mCommand: List all services which are started at boot time and name this kind of services\e[0m'
+printf "\tsystemctl list-unit-files --type=service | awk -F'.service' '{printf \$1 \"\\\n\"}'\n"
+echo '\tthese kind of services are called daemons'

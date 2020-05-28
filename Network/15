@@ -1,0 +1,2 @@
+echo $'\e[4mDeduction: Make the intra.42.fr address reroute to 46.19.122.85\e[0m'
+echo "With the right permissions:\necho 46.19.122.85 >> /etc/hosts"

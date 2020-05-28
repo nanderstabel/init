@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: List all real users on the VM\e[0m'
+printf "\tcat /etc/passwd | grep '/home/' | awk -F':' '{printf \$1 \"\\\n\"}'\n"

@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: What command gives you the time since your system was last booted?\e[0m'
+echo "who -b | awk '{printf \$3 \" \" \$4 \" \" \$5 \"\\\n\"}'"

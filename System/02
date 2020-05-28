@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: What command can you use to rename your system?\e[0m'
+echo "hostname new_system_name"

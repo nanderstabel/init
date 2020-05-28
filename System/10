@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: Name the command that lists the partition tables of drives?\e[0m'
+echo "fdisk -l"

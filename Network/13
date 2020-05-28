@@ -1,0 +1,2 @@
+echo $'\e[4mOutput: Thanks to the previous question and the reverse DNS find the name of your host\e[0m'
+dig +noall +answer -x $(ipconfig getifaddr en0) | awk '{print $5}'

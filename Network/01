@@ -1,0 +1,3 @@
+echo $'\e[4mCommand: Get the list of the network interfaces of the machine without displaying any detail
+for these interfaces. Only the list of names.\e[0m'
+printf "\tifconfig -l\n"

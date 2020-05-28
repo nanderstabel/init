@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: Identifiy the default gateway in the routing table\e[0m'
+printf "\tnetstat -nr | awk '/default/{print \$2}' | sed '\$d'\n"

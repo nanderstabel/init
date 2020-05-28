@@ -1,0 +1,2 @@
+echo $'\e[4mCommand: Find the IP that was assigned to you by dhcp server\e[0m'
+printf "\tipconfig getifaddr en0\n"

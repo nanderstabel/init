@@ -1,0 +1,11 @@
+#!/bin/bash
+# Write a script which delete an ACTIVE user on the VM.
+USER="$1"
+if [[ $(w | grep -E "^$USER ") ]];
+then
+	sudo pgrep -fp $(pgrep -u $USER)
+	sudo pkill -KILL -u $USER
+	sudo userdel -r $USER
+else
+	echo $USER: not an active user
+fi
